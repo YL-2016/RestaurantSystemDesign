@@ -1,0 +1,65 @@
+Finished Order List: 
+RECEIPT
+=========================================
+# OrderID:                        1000001
+# TableNumber:                          6
+Server#:                            10002
+=========================================
+Persons:                                5
+=========================================
+Drinks: 
+3 OrangeJuice                      $ 2.40
+2 Coke                             $ 1.60
+1 DietCoke                         $ 0.80
+
+Snacks: 
+
+Desserts: 
+2 VanillaCone                      $ 3.00
+2 ApplePie                         $ 5.00
+2 Sundae                           $ 4.00
+
+Salads: 
+
+Burgers: 
+6 DoubleCheeseBurger              $ 36.00
+6 GrilledChickenBurger            $ 48.00
+=========================================
+                       SubTotal: $ 100.80
+                             TAX: $ 13.10
+                         GRATUITY: $ 0.00
+=========================================
+                          TOTAL: $ 113.90
+
+RECEIPT
+=========================================
+# OrderID:                        1000000
+# TableNumber:                          5
+Server#:                            10002
+=========================================
+Persons:                                5
+=========================================
+Drinks: 
+3 OrangeJuice                      $ 2.40
+2 Coke                             $ 1.60
+1 DietCoke                         $ 0.80
+
+Snacks: 
+
+Desserts: 
+2 Sundae                           $ 4.00
+2 VanillaCone                      $ 3.00
+2 ApplePie                         $ 5.00
+
+Salads: 
+
+Burgers: 
+=========================================
+                        SubTotal: $ 16.80
+                              TAX: $ 2.18
+                         GRATUITY: $ 0.00
+=========================================
+                           TOTAL: $ 18.98
+
+Summary: 
+Total Income:                    $ 132.89

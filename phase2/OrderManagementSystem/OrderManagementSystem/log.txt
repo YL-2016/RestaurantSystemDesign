@@ -1,0 +1,935 @@
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+Alarm value is set to 20
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient Lettuce is reduced to 11
+Ingredient Cheese is reduced to 11
+Ingredient Chicken is reduced to 11
+Ingredient Beef is reduced to 11
+Ingredient Bread is reduced to 7
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Employee ID: 10001 Name: Howard logged out
+Chef Howard logged in
+Order 1000001 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 14
+Ingredient Coke is reduced to 14
+Ingredient Cream is reduced to 13
+Ingredient OrangeJuice is reduced to 14
+Ingredient Chocolate is reduced to 14
+Ingredient Cheese is reduced to 6
+Ingredient Flour is reduced to 11
+Ingredient Tomato is reduced to 14
+Ingredient Banana is reduced to 14
+Ingredient Bread is reduced to -1
+Ingredient Apple is reduced to 13
+Ingredient Lettuce is reduced to 5
+Ingredient Chicken is reduced to -3
+Ingredient Beef is reduced to -3
+Ingredient ChickenMeat is reduced to 14
+Ingredient Cucumber is reduced to 14
+Ingredient Sugar is reduced to 9
+Ingredient Milk is reduced to 12
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Employee ID: 10001 Name: Howard logged out
+Chef Howard logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+Alarm value is set to 60
+Alarm value is set to 30
+New chef AAA is hired.
+New server BBB is hired.
+Employee BBB is fired.
+Inventory update start
+Ingredient IcedTea is updated to 100
+updateInventory start
+updateInventory finished
+Inventory update finished
+Employee ID: 10000 Name: James logged out
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef AAA
+Inventory update start
+Ingredient Water is updated to 500
+updateInventory start
+updateInventory finished
+Inventory update finished
+Inventory update start
+Ingredient Sprite is updated to 50
+updateInventory start
+updateInventory finished
+Inventory update finished
+Employee ID: 10002 Name: Dorothy logged out
+Chef AAA logged in
+Order 1000001 is prepared by Chef AAA
+Inventory reduce start
+Ingredient DietCoke is reduced to 49
+Ingredient Coke is reduced to 48
+Ingredient Cream is reduced to 46
+Ingredient OrangeJuice is reduced to 48
+Ingredient Chocolate is reduced to 48
+Ingredient Cheese is reduced to 44
+Ingredient Flour is reduced to 40
+Ingredient Tomato is reduced to 44
+Ingredient Banana is reduced to 48
+Ingredient Bread is reduced to 42
+Ingredient Apple is reduced to 44
+Ingredient Lettuce is reduced to 38
+Ingredient Chicken is reduced to 46
+Ingredient Beef is reduced to 46
+Ingredient ChickenMeat is reduced to 48
+Ingredient Cucumber is reduced to 44
+Ingredient Sugar is reduced to 36
+Ingredient Milk is reduced to 44
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Employee ID: 10003 Name: AAA logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 48
+Ingredient Coke is reduced to 46
+Ingredient Cream is reduced to 42
+Ingredient OrangeJuice is reduced to 46
+Ingredient Chocolate is reduced to 46
+Ingredient Cheese is reduced to 40
+Ingredient Flour is reduced to 30
+Ingredient Tomato is reduced to 38
+Ingredient Banana is reduced to 46
+Ingredient Bread is reduced to 38
+Ingredient Apple is reduced to 38
+Ingredient Lettuce is reduced to 28
+Ingredient Chicken is reduced to 44
+Ingredient Beef is reduced to 44
+Ingredient ChickenMeat is reduced to 46
+Ingredient Cucumber is reduced to 38
+Ingredient Sugar is reduced to 22
+Ingredient Milk is reduced to 38
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000001 checking starts
+Order 1000001 is finished checking
+Order 1000001 is delivered to the customer
+Bill for Order 1000001 is created.
+Order 1000000 checking starts
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+Employee ID: 10002 Name: Dorothy logged out
+Manager James logged in
+Employee ID: 10000 Name: James logged out
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+Inventory update start
+Ingredient DietCoke is updated to 102
+updateInventory start
+updateInventory finished
+Inventory update finished
+Inventory update start
+Ingredient DietCoke is updated to 107
+updateInventory start
+updateInventory finished
+Inventory update finished
+Inventory update start
+Ingredient Tomato is updated to 108
+updateInventory start
+updateInventory finished
+Inventory update finished
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+Employee ID: 10000 Name: James logged out
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+Employee ID: 10000 Name: James logged out
+Server Dorothy logged in
+Employee ID: 10002 Name: Dorothy logged out
+Manager James logged in
+Employee ID: 10000 Name: James logged out
+Server Dorothy logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef Howard
+New order 1000002 is created by Dorothy
+Order 1000002 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+New chef AAA is hired.
+New server BBB is hired.
+Employee BBB is fired.
+Employee ID: 10000 Name: James logged out
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient Apple is reduced to 94
+Ingredient Lettuce is reduced to 90
+Ingredient Cream is reduced to 79
+Ingredient Cheese is reduced to 90
+Ingredient Chicken is reduced to 90
+Ingredient Flour is reduced to 94
+Ingredient Beef is reduced to 90
+Ingredient Sugar is reduced to 52
+Ingredient Milk is reduced to 59
+Ingredient Bread is reduced to 80
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Order 1000001 is prepared by Chef Howard
+Inventory reduce start
+Ingredient Coke is reduced to 95
+Ingredient Cheese is reduced to 80
+Ingredient Flour is reduced to 89
+Ingredient Beef is reduced to 80
+Ingredient ChickenMeat is reduced to 95
+Ingredient Bread is reduced to 70
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000001 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000000 checking starts
+Burgers DoubleCheeseBurger is returned!
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 99
+Ingredient Coke is reduced to 99
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000000 checking starts
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+printReceipt start
+printReceipt finished
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 99
+Ingredient Lettuce is reduced to 96
+Ingredient Coke is reduced to 99
+Ingredient OrangeJuice is reduced to 99
+Ingredient Chicken is reduced to 96
+Ingredient Cheese is reduced to 96
+Ingredient Beef is reduced to 96
+Ingredient Bread is reduced to 92
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000000 checking starts
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 99
+Ingredient Cream is reduced to 98
+Ingredient Chocolate is reduced to 98
+Ingredient Cheese is reduced to 97
+Ingredient Flour is reduced to 94
+Ingredient Tomato is reduced to 99
+Ingredient Banana is reduced to 98
+Ingredient Bread is reduced to 94
+Ingredient Apple is reduced to 98
+Ingredient Lettuce is reduced to 94
+Ingredient Chicken is reduced to 92
+Ingredient Beef is reduced to 96
+Ingredient ChickenMeat is reduced to 98
+Ingredient Cucumber is reduced to 99
+Ingredient Sugar is reduced to 94
+Ingredient Milk is reduced to 97
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Order 1000001 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 95
+Ingredient Lettuce is reduced to 90
+Ingredient Coke is reduced to 97
+Ingredient OrangeJuice is reduced to 98
+Ingredient Cheese is reduced to 95
+Ingredient Chicken is reduced to 84
+Ingredient Flour is reduced to 92
+Ingredient Beef is reduced to 92
+Ingredient ChickenMeat is reduced to 96
+Ingredient Bread is reduced to 88
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000001 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000001 checking starts
+Order 1000001 is finished checking
+Order 1000001 is delivered to the customer
+Bill for Order 1000001 is created.
+Order 1000000 checking starts
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef Howard
+New order 1000002 is created by Dorothy
+Order 1000002 is assigned to Chef Howard
+New order 1000003 is created by Dorothy
+Order 1000003 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 98
+Ingredient Apple is reduced to 96
+Ingredient Lettuce is reduced to 96
+Ingredient Coke is reduced to 96
+Ingredient Chocolate is reduced to 98
+Ingredient Cheese is reduced to 98
+Ingredient Flour is reduced to 92
+Ingredient Tomato is reduced to 98
+Ingredient ChickenMeat is reduced to 98
+Ingredient Cucumber is reduced to 98
+Ingredient Sugar is reduced to 96
+Ingredient Banana is reduced to 98
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Order 1000001 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 96
+Ingredient Coke is reduced to 92
+Ingredient Cream is reduced to 90
+Ingredient OrangeJuice is reduced to 95
+Ingredient Chocolate is reduced to 96
+Ingredient Cheese is reduced to 96
+Ingredient Flour is reduced to 84
+Ingredient Tomato is reduced to 96
+Ingredient Banana is reduced to 96
+Ingredient Apple is reduced to 92
+Ingredient Lettuce is reduced to 92
+Ingredient ChickenMeat is reduced to 96
+Ingredient Cucumber is reduced to 96
+Ingredient Sugar is reduced to 72
+Ingredient Milk is reduced to 85
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000001 is prepared by Chef Howard
+Order 1000002 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 86
+Ingredient Coke is reduced to 62
+Ingredient Cream is reduced to 80
+Ingredient OrangeJuice is reduced to 90
+Ingredient Chocolate is reduced to 94
+Ingredient Cheese is reduced to 84
+Ingredient Flour is reduced to 76
+Ingredient Tomato is reduced to 94
+Ingredient Banana is reduced to 94
+Ingredient Bread is reduced to 80
+Ingredient Apple is reduced to 88
+Ingredient Lettuce is reduced to 78
+Ingredient Chicken is reduced to 65
+Ingredient Beef is reduced to 65
+Ingredient ChickenMeat is reduced to 94
+Ingredient Cucumber is reduced to 94
+Ingredient Sugar is reduced to 48
+Ingredient Milk is reduced to 70
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000002 is prepared by Chef Howard
+Order 1000003 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 76
+Ingredient Coke is reduced to 32
+Ingredient Cream is reduced to 70
+Ingredient OrangeJuice is reduced to 85
+Ingredient Chocolate is reduced to 74
+Ingredient Cheese is reduced to 72
+Ingredient Flour is reduced to 32
+Ingredient Tomato is reduced to 92
+Ingredient Banana is reduced to 74
+Ingredient Bread is reduced to 60
+Ingredient Apple is reduced to 84
+Ingredient Lettuce is reduced to 64
+Ingredient Chicken is reduced to 5
+Ingredient Beef is reduced to 5
+Ingredient ChickenMeat is reduced to 74
+Ingredient Cucumber is reduced to 92
+Ingredient Sugar is reduced to 24
+Ingredient Milk is reduced to 55
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000003 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Inventory update start
+Ingredient Chicken is updated to 25
+updateInventory start
+updateInventory finished
+Inventory update finished
+Inventory update start
+Ingredient Beef is updated to 55
+updateInventory start
+updateInventory finished
+Inventory update finished
+Order 1000000 checking starts
+Drinks DietCoke is returned!
+Drinks Coke is returned!
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+Order 1000003 checking starts
+Order 1000003 is finished checking
+Order 1000003 is delivered to the customer
+Bill for Order 1000003 is created.
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Manager James logged in
+Employee ID: 10000 Name: James logged out
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient Flour is reduced to 98
+Ingredient ChickenMeat is reduced to 98
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000000 checking starts
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+printReceipt start
+printReceipt finished
+Employee ID: 10002 Name: Dorothy logged out
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Manager James logged in
+Alarm value is set to 200
+Alarm value is set to 50
+Inventory update start
+Ingredient Water is updated to 105
+updateInventory start
+updateInventory finished
+Inventory update finished
+New chef Sunday is hired.
+New server Cola is hired.
+Employee ID: 10000 Name: James logged out
+Server Dorothy logged in
+New order 1000002 is created by Dorothy
+Order 1000002 is assigned to Chef Sunday
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Employee ID: 10001 Name: Howard logged out
+Chef Sunday logged in
+Order 1000002 is prepared by Chef Sunday
+Inventory reduce start
+Ingredient Lettuce is reduced to 96
+Ingredient Coke is reduced to 94
+Ingredient Chocolate is reduced to 98
+Ingredient Chicken is reduced to 96
+Ingredient Cheese is reduced to 96
+Ingredient Flour is reduced to 96
+Ingredient Beef is reduced to 96
+Ingredient ChickenMeat is reduced to 98
+Ingredient Banana is reduced to 98
+Ingredient Bread is reduced to 92
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000002 is prepared by Chef Sunday
+Employee ID: 10003 Name: Sunday logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 92
+Ingredient Coke is reduced to 86
+Ingredient Cream is reduced to 84
+Ingredient OrangeJuice is reduced to 92
+Ingredient Chocolate is reduced to 93
+Ingredient Cheese is reduced to 94
+Ingredient Flour is reduced to 70
+Ingredient Tomato is reduced to 98
+Ingredient Banana is reduced to 93
+Ingredient Apple is reduced to 84
+Ingredient Lettuce is reduced to 92
+Ingredient ChickenMeat is reduced to 93
+Ingredient Cucumber is reduced to 98
+Ingredient Sugar is reduced to 52
+Ingredient Milk is reduced to 76
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Order 1000001 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 90
+Ingredient Coke is reduced to 84
+Ingredient Cream is reduced to 82
+Ingredient OrangeJuice is reduced to 90
+Ingredient Chocolate is reduced to 91
+Ingredient Cheese is reduced to 73
+Ingredient Flour is reduced to 66
+Ingredient Tomato is reduced to 97
+Ingredient Banana is reduced to 91
+Ingredient Bread is reduced to 52
+Ingredient Lettuce is reduced to 70
+Ingredient Chicken is reduced to 76
+Ingredient Beef is reduced to 76
+Ingredient ChickenMeat is reduced to 91
+Ingredient Cucumber is reduced to 97
+Ingredient Sugar is reduced to 48
+Ingredient Milk is reduced to 73
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000001 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000000 checking starts
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+Order 1000002 checking starts
+Order 1000002 is finished checking
+Order 1000002 is delivered to the customer
+Bill for Order 1000002 is created.
+Order 1000001 checking starts
+Drinks DietCoke is returned!
+Drinks Coke is returned!
+Desserts VanillaCone is returned!
+Order 1000001 is finished checking
+Order 1000001 is delivered to the customer
+Bill for Order 1000001 is created.
+Employee ID: 10002 Name: Dorothy logged out
+Manager James logged in
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 99
+Ingredient Lettuce is reduced to 96
+Ingredient Cheese is reduced to 96
+Ingredient Beef is reduced to 98
+Ingredient Tomato is reduced to 98
+Ingredient Cucumber is reduced to 98
+Ingredient Bread is reduced to 98
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Order 1000001 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 98
+Ingredient Lettuce is reduced to 92
+Ingredient Cheese is reduced to 92
+Ingredient Beef is reduced to 96
+Ingredient Tomato is reduced to 96
+Ingredient Cucumber is reduced to 96
+Ingredient Bread is reduced to 96
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000001 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000000 checking starts
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+Order 1000001 checking starts
+Order 1000001 is finished checking
+Order 1000001 is delivered to the customer
+Bill for Order 1000001 is created.
+Employee ID: 10002 Name: Dorothy logged out
+Manager James logged in
+printAllReceiptInfo start
+printAllReceiptInfo finished
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 99
+Ingredient Coke is reduced to 99
+Ingredient OrangeJuice is reduced to 99
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Order 1000001 is prepared by Chef Howard
+Inventory reduce start
+Ingredient Apple is reduced to 96
+Ingredient Lettuce is reduced to 96
+Ingredient Cream is reduced to 96
+Ingredient Cheese is reduced to 96
+Ingredient Chicken is reduced to 96
+Ingredient Flour is reduced to 96
+Ingredient Beef is reduced to 96
+Ingredient Sugar is reduced to 88
+Ingredient Milk is reduced to 94
+Ingredient Bread is reduced to 92
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000001 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000000 checking starts
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+Order 1000001 checking starts
+Order 1000001 is finished checking
+Order 1000001 is delivered to the customer
+Bill for Order 1000001 is created.
+Employee ID: 10002 Name: Dorothy logged out
+Manager James logged in
+printAllReceiptInfo start
+printAllReceiptInfo finished
+printAllReceiptInfo start
+printAllReceiptInfo finished
+createIngredientsTable start
+createIngredientsTable finished
+loadInventory start
+loadInventory finished
+Server Dorothy logged in
+New order 1000000 is created by Dorothy
+Order 1000000 is assigned to Chef Howard
+New order 1000001 is created by Dorothy
+Order 1000001 is assigned to Chef Howard
+Employee ID: 10002 Name: Dorothy logged out
+Chef Howard logged in
+Order 1000000 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 99
+Ingredient Apple is reduced to 96
+Ingredient Coke is reduced to 98
+Ingredient Cream is reduced to 96
+Ingredient OrangeJuice is reduced to 97
+Ingredient Flour is reduced to 96
+Ingredient Sugar is reduced to 88
+Ingredient Milk is reduced to 94
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000000 is prepared by Chef Howard
+Order 1000001 is prepared by Chef Howard
+Inventory reduce start
+Ingredient DietCoke is reduced to 98
+Ingredient Coke is reduced to 96
+Ingredient Cream is reduced to 92
+Ingredient OrangeJuice is reduced to 94
+Ingredient Cheese is reduced to 88
+Ingredient Flour is reduced to 92
+Ingredient Bread is reduced to 76
+Ingredient Apple is reduced to 92
+Ingredient Lettuce is reduced to 88
+Ingredient Chicken is reduced to 88
+Ingredient Beef is reduced to 88
+Ingredient Sugar is reduced to 76
+Ingredient Milk is reduced to 88
+updateInventory start
+updateInventory finished
+Inventory reduce finished
+Order 1000001 is prepared by Chef Howard
+Employee ID: 10001 Name: Howard logged out
+Server Dorothy logged in
+Order 1000000 checking starts
+Order 1000000 is finished checking
+Order 1000000 is delivered to the customer
+Bill for Order 1000000 is created.
+Order 1000001 checking starts
+Order 1000001 is finished checking
+Order 1000001 is delivered to the customer
+Bill for Order 1000001 is created.
+Employee ID: 10002 Name: Dorothy logged out
+Manager James logged in
+printAllReceiptInfo start
+printAllReceiptInfo finished
