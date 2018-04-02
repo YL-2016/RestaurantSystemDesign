@@ -9,12 +9,13 @@ public class Permission {
 	private boolean canUseInfoPanel;
 	private boolean canSetAlarm;
 	private boolean canOutputOneDayInfo;
+	private boolean canUseStatePanel;
 
 	public Permission(boolean canUseEmployeePanel,
 			boolean canUseInventoryPanel, boolean canUseOrderPanel,
 			boolean canUseBillPanel, boolean canUseKitchenPanel,
 			boolean canUseInfoPanel, boolean canSetAlram,
-			boolean canOutputOneDayInfo) {
+			boolean canOutputOneDayInfo, boolean canUseStatePanel) {
 		super();
 		this.canUseEmployeePanel = canUseEmployeePanel;
 		this.canUseInventoryPanel = canUseInventoryPanel;
@@ -24,6 +25,7 @@ public class Permission {
 		this.canUseInfoPanel = canUseInfoPanel;
 		this.canSetAlarm = canSetAlram;
 		this.canOutputOneDayInfo = canOutputOneDayInfo;
+		this.canUseStatePanel = canUseStatePanel;
 	}
 
 	public boolean canOutputOneDayInfo() {
@@ -80,5 +82,12 @@ public class Permission {
 
 	public void setCanUseKitchenPanel(boolean canUseKitchenPanel) {
 		this.canUseKitchenPanel = canUseKitchenPanel;
+	}
+	public boolean canUseStatePanel() {
+		return canUseStatePanel;
+	}
+	public void setCanUseStatePanel(boolean canUseStatePanel) {
+		this.canUseStatePanel = canUseStatePanel;
+		return;
 	}
 }

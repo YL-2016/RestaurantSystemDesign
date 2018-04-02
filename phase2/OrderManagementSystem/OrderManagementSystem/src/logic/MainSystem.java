@@ -42,6 +42,17 @@ public class MainSystem {
 		return orderSystem.getCurrentFinishedOrderList(server);
 	}
 
+	public List<Order> getCurrentWaitingOrderList(){
+		Chef chef = getCurrentChef();
+		return orderSystem.getCurrentWaitingOrderList(chef);
+	}
+
+	public List<Order> getCurrentPreparedOrderList(){
+		Server server = getCurrentServer();
+		return orderSystem.getCurrentPreparedOrderList(server);
+	}
+
+
 	public void prepareOrder(Order order) {
 		Chef chef = order.getChef();
 		Server server = order.getServer();

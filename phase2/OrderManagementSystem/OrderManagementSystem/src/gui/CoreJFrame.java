@@ -6,6 +6,7 @@ import gui.panel.EmployeePanel;
 import gui.panel.InventoryPanel;
 import gui.panel.KitchenPanel;
 import gui.panel.OrderPanel;
+import gui.panel.StatePanel;
 import gui.panel.TabPanelInterface;
 
 import java.awt.Component;
@@ -39,6 +40,7 @@ public class CoreJFrame extends JFrame {
 	private InventoryPanel panel_Inventory;
 	private KitchenPanel panel_Kitchen;
 	private EmployeePanel panel_Employee;
+	private StatePanel panel_State;
 
 	public void updateBillPanel() {
 		panel_Bill.updateBillPanel();
@@ -114,6 +116,10 @@ public class CoreJFrame extends JFrame {
 		panel_Employee = new EmployeePanel(this);
 		if (permission.canUseEmployeePanel()) {
 			tabbedPane.addTab("Employee", null, panel_Employee, null);
+		}
+		panel_State = new StatePanel(this);
+		if (permission.canUseStatePanel()) {
+			tabbedPane.addTab("State", null, panel_State, null);
 		}
 	}
 

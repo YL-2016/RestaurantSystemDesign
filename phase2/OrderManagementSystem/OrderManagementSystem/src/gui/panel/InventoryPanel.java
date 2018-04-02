@@ -51,7 +51,7 @@ public class InventoryPanel extends JPanel implements TabPanelInterface{
 		JPanel panel_Left = new JPanel();
 		add(panel_Left, BorderLayout.CENTER);
 
-		ingredientDtm = getIngredientTableModel();
+		ingredientDtm = getIngredientTableModel(MainSystem.getInstance().getAlarmNum());
 		panel_Left.setLayout(new BorderLayout(0, 0));
 		table_Ingredient = new JTable(ingredientDtm) {
 			private static final long serialVersionUID = -300348443048090716L;
@@ -91,7 +91,7 @@ public class InventoryPanel extends JPanel implements TabPanelInterface{
 						int value = Integer.parseInt(input.trim());
 						textField_Alarm.setText(value + "");
 						MainSystem.getInstance().setAlarmNum(value);
-						showAlarm();
+						showAlarm(value);
 					} catch (NumberFormatException ne) {
 
 					}
@@ -99,12 +99,11 @@ public class InventoryPanel extends JPanel implements TabPanelInterface{
 			});
 			panel_Right.add(btn_Alarm);
 		}
-
-		showAlarm();
+		showAlarm(MainSystem.getInstance().getAlarmNum());
 	}
 
-	private DefaultTableModel getIngredientTableModel() {
-		DefaultTableModel dtm = new DefaultTableModel(createTableModelData(),
+	private DefaultTableModel getIngredientTableModel(int alarm) {
+		DefaultTableModel dtm = new DefaultTableModel(createTableModelData(alarm),
 				createColumnNames());
 
 		dtm.addTableModelListener(new TableModelListener() {
@@ -126,7 +125,7 @@ public class InventoryPanel extends JPanel implements TabPanelInterface{
 						Map<String, Integer> map = new HashMap<String, Integer>();
 						map.put(title, total);
 						MainSystem.getInstance().update(map);
-						showAlarm();
+						showAlarm(alarm);
 					}
 				}
 			}
@@ -135,7 +134,7 @@ public class InventoryPanel extends JPanel implements TabPanelInterface{
 		return dtm;
 	}
 
-	private Vector createTableModelData() {
+	private Vector createTableModelData(int alarm) {
 		Vector data = new Vector();
 		Map<String, Integer> ingredientMap = MainSystem.getInstance()
 				.getIngredientMap();
@@ -146,9 +145,13 @@ public class InventoryPanel extends JPanel implements TabPanelInterface{
 			rowData.add(title);
 			rowData.add(integer);
 			rowData.add(0);
-			data.add(rowData);
+			if (integer <= alarm)
+			{
+				data.insertElementAt(rowData, 0);
+			}
+			else
+				data.add(rowData);
 		}
-
 		return data;
 	}
 
@@ -161,31 +164,42 @@ public class InventoryPanel extends JPanel implements TabPanelInterface{
 		return columnNames;
 	}
 
-	public void showAlarm() {
+	public void showAlarm(int alarm) {
+		DefaultTableModel temp = getIngredientTableModel(alarm);
+		while(ingredientDtm.getRowCount()>0)
+			ingredientDtm.removeRow(0);
+		for(int i=0; i<temp.getRowCount(); ++i)
+		{
+			Vector t=new Vector();
+			t.add(temp.getValueAt(i, 0));
+			t.add(temp.getValueAt(i, 1));
+			t.add(temp.getValueAt(i, 2));
+			ingredientDtm.addRow(t);
+		}
 		DefaultTableCellRenderer dtcr = new DefaultTableCellRenderer() {
-			private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 1L;
 
-			@Override
-			public Component getTableCellRendererComponent(JTable table,
-					Object value, boolean isSelected, boolean hasFocus,
-					int row, int column) {
-				Component c = super.getTableCellRendererComponent(table, value,
-						isSelected, hasFocus, row, column);
-				Integer integer = Integer.parseInt(table_Ingredient.getValueAt(
-						row, 1).toString());
-				int alarm = MainSystem.getInstance().getAlarmNum();
-				if (integer <= alarm) {
-					setBackground(Color.red);
-				} else {
-					setBackground(Color.white);
-				}
-				return c;
+		@Override
+		public Component getTableCellRendererComponent(JTable table,
+				Object value, boolean isSelected, boolean hasFocus,
+				int row, int column) {
+			Component c = super.getTableCellRendererComponent(table, value,
+					isSelected, hasFocus, row, column);
+			Integer integer = Integer.parseInt(table_Ingredient.getValueAt(
+					row, 1).toString());
+			int alarm = MainSystem.getInstance().getAlarmNum();
+			if (integer <= alarm) {
+				setBackground(Color.red);
+			} else {
+				setBackground(Color.white);
 			}
-		};
+			return c;
+		}
+	};
 
-		TableColumn tc = table_Ingredient.getColumn(STOCK_COLUMN);
-		tc.setCellRenderer(dtcr);
-		table_Ingredient.repaint();
+	TableColumn tc = table_Ingredient.getColumn(STOCK_COLUMN);
+	tc.setCellRenderer(dtcr);		
+	table_Ingredient.repaint();
 	}
 
 	@Override

@@ -44,12 +44,6 @@ public class BillPanel extends JPanel implements TabPanelInterface {
 		list_Bill = new JList(billOrderDLM);
 		list_Bill.addListSelectionListener(new ListSelectionListener() {
 			public void valueChanged(ListSelectionEvent e) {
-				// int index = list_Bill.getSelectedIndex();
-				// if (index != -1) {
-				// Order order = billOrderDLM.get(index);
-				// String billString = order.generateBillInfo();
-				// textArea_Bill.setText(billString);
-				// }
 			}
 		});
 		list_Bill.setBounds(10, 35, 71, 251);
@@ -117,7 +111,7 @@ public class BillPanel extends JPanel implements TabPanelInterface {
 
 		Permission permission = MainSystem.getInstance().getCurrentPermission();
 		if (permission.canOutputOneDayInfo()) {
-			JButton btnPrintAllInfo = new JButton("Print Receipt");
+			JButton btnPrintAllInfo = new JButton("Print Receipts");
 			btnPrintAllInfo.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					IOUtils.getInstance().printAllReceiptInfo();

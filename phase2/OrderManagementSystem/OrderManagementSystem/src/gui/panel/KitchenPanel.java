@@ -27,9 +27,12 @@ public class KitchenPanel extends JPanel implements TabPanelInterface{
 	private static final long serialVersionUID = -2320751809906852668L;
 
 	private DefaultListModel<Order> kitchenOrderDLM; // Kitchen
+	private DefaultListModel<Order> preparedKitchenOrderDLM; // Kitchen
 	private JList list_Kitchen;
 	private FoodPanel panel_OrderInKitchen;
 	private CoreJFrame jframe;
+	private DefaultListModel<Order> FinishedOrder; // Order
+	private JList list_FinishedOrder;
 	
 	public KitchenPanel(CoreJFrame coreJFrame){
 		jframe = coreJFrame;
@@ -53,6 +56,24 @@ public class KitchenPanel extends JPanel implements TabPanelInterface{
 		JLabel label_1 = new JLabel("Waiting");
 		label_1.setBounds(10, 10, 54, 15);
 		add(label_1);
+		
+		JLabel label_2 = new JLabel("Finished");
+		label_2.setBounds(10, 209, 54, 15);
+		add(label_2);
+
+		FinishedOrder = new DefaultListModel<>();
+		list_FinishedOrder = new JList(FinishedOrder);
+		list_FinishedOrder.addListSelectionListener(new ListSelectionListener() {
+			public void valueChanged(ListSelectionEvent e) {
+				int index = list_FinishedOrder.getSelectedIndex();
+				if (index != -1) {
+					Order order = FinishedOrder.get(index);
+					panel_OrderInKitchen.enterDisplayMode(order, false);
+				}
+			}
+		});
+		list_FinishedOrder.setBounds(10, 237, 71, 155);
+		add(list_FinishedOrder);		
 
 		panel_OrderInKitchen = new FoodPanel();
 		panel_OrderInKitchen.setBounds(91, 0, 758, 399);
@@ -66,6 +87,11 @@ public class KitchenPanel extends JPanel implements TabPanelInterface{
 					Order order = kitchenOrderDLM.get(index);
 					if (MainSystem.getInstance().isEnough(order.getNeedsMap())) {
 						MainSystem.getInstance().prepareOrder(order);
+						//preparedKitchenOrderDLM.add(0,kitchenOrderDLM.get(0));
+						//preparedKitchenOrderDLM.addElement(null);
+						//preparedKitchenOrderDLM.addElement(order);
+						FinishedOrder.addElement(order);
+						kitchenOrderDLM.setElementAt(null, 0);
 						kitchenOrderDLM.remove(0);
 						JOptionPane.showMessageDialog(null,
 								"Order is prepared!", "Tips",

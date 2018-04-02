@@ -43,7 +43,7 @@ public class OrderPanel extends JPanel implements TabPanelInterface{
 			public void valueChanged(ListSelectionEvent e) {
 				Order order = waitingOrderDLM.get(list_Waiting
 						.getSelectedIndex());
-				panel_FoodOrder.enterDisplayMode(order, false);
+				panel_FoodOrder.enterDisplayMode(order, true);
 			}
 		});
 		list_Waiting.setBounds(10, 41, 71, 161);

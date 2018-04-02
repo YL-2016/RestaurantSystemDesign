@@ -37,6 +37,8 @@ public class Order {
 	private int persons;
 	private String tableNums;
 
+	private double discount;
+
 	public static void main(String[] args) {
 		Map<Drinks, Integer> drinkMap = new HashMap<Drinks, Integer>();
 		Map<Snacks, Integer> snackMap = new HashMap<>();
@@ -53,8 +55,9 @@ public class Order {
 
 		int persons = 10;
 		String tableNums = "85";
+		double discount = 0.8;
 		Order order = new Order(drinkMap, snackMap, dessertsMap, saladsMap,
-				burgersMap, needsMap, persons, tableNums);
+				burgersMap, needsMap, persons, discount, tableNums);
 		order.setServer(new Server("123", null));
 
 		System.out.println(order.generateBillInfo(true));
@@ -140,68 +143,79 @@ public class Order {
 		double feeOfSalads = .0;
 		double feeOfBurgers = .0;
 
-		sBuffer.append("Drinks: " + ConstUtils.LINE_SEPARATOR);
-		for (Map.Entry<Drinks, Integer> entry : drinkMap.entrySet()) {
-			Drinks drink = entry.getKey();
-			double price = drink.getPrice() * entry.getValue();
-			feeOfDrinks += price;
-			String leftPart = entry.getValue() + " " + drink.getName();
-			sBuffer.append(leftPart
-					+ String.format(FuncUtils.getFormatString(leftPart),
+		if(!drinkMap.isEmpty()) {
+			sBuffer.append("Drinks: " + ConstUtils.LINE_SEPARATOR);
+			for (Map.Entry<Drinks, Integer> entry : drinkMap.entrySet()) {
+				Drinks drink = entry.getKey();
+				double price = drink.getPrice() * entry.getValue();
+				feeOfDrinks += price;
+				String leftPart = entry.getValue() + " " + drink.getName();
+				sBuffer.append(leftPart
+						+ String.format(FuncUtils.getFormatString(leftPart),
 							String.format("$ %.2f", price))
 					+ ConstUtils.LINE_SEPARATOR);
+			}
+			sBuffer.append(ConstUtils.LINE_SEPARATOR);
 		}
 
-		sBuffer.append(ConstUtils.LINE_SEPARATOR);
-		sBuffer.append("Snacks: " + ConstUtils.LINE_SEPARATOR);
-		for (Map.Entry<Snacks, Integer> entry : snackMap.entrySet()) {
-			Snacks snack = entry.getKey();
-			double price = snack.getPrice() * entry.getValue();
-			feeOfSnacks += price;
-			String leftPart = entry.getValue() + " " + snack.getName();
-			sBuffer.append(leftPart
-					+ String.format(FuncUtils.getFormatString(leftPart),
-							String.format("$ %.2f", price))
-					+ ConstUtils.LINE_SEPARATOR);
+		if(!snackMap.isEmpty()) {
+			sBuffer.append("Snacks: " + ConstUtils.LINE_SEPARATOR);
+			for (Map.Entry<Snacks, Integer> entry : snackMap.entrySet()) {
+				Snacks snack = entry.getKey();
+				double price = snack.getPrice() * entry.getValue();
+				feeOfSnacks += price;
+				String leftPart = entry.getValue() + " " + snack.getName();
+				sBuffer.append(leftPart
+						+ String.format(FuncUtils.getFormatString(leftPart),
+								String.format("$ %.2f", price))
+						+ ConstUtils.LINE_SEPARATOR);
+			}
+	
+			sBuffer.append(ConstUtils.LINE_SEPARATOR);
 		}
-
-		sBuffer.append(ConstUtils.LINE_SEPARATOR);
-		sBuffer.append("Desserts: " + ConstUtils.LINE_SEPARATOR);
-		for (Map.Entry<Desserts, Integer> entry : dessertsMap.entrySet()) {
-			Desserts dessert = entry.getKey();
-			double price = dessert.getPrice() * entry.getValue();
-			feeOfDesserts += price;
-			String leftPart = entry.getValue() + " " + dessert.getName();
-			sBuffer.append(leftPart
-					+ String.format(FuncUtils.getFormatString(leftPart),
-							String.format("$ %.2f", price))
-					+ ConstUtils.LINE_SEPARATOR);
+		if(!dessertsMap.isEmpty()) {
+			sBuffer.append("Desserts: " + ConstUtils.LINE_SEPARATOR);
+			for (Map.Entry<Desserts, Integer> entry : dessertsMap.entrySet()) {
+				Desserts dessert = entry.getKey();
+				double price = dessert.getPrice() * entry.getValue();
+				feeOfDesserts += price;
+				String leftPart = entry.getValue() + " " + dessert.getName();
+				sBuffer.append(leftPart
+						+ String.format(FuncUtils.getFormatString(leftPart),
+								String.format("$ %.2f", price))
+						+ ConstUtils.LINE_SEPARATOR);
+			}
+	
+			sBuffer.append(ConstUtils.LINE_SEPARATOR);
 		}
-
-		sBuffer.append(ConstUtils.LINE_SEPARATOR);
-		sBuffer.append("Salads: " + ConstUtils.LINE_SEPARATOR);
-		for (Map.Entry<Salads, Integer> entry : saladsMap.entrySet()) {
-			Salads salad = entry.getKey();
-			double price = salad.getPrice() * entry.getValue();
-			feeOfSalads += price;
-			String leftPart = entry.getValue() + " " + salad.getName();
-			sBuffer.append(leftPart
-					+ String.format(FuncUtils.getFormatString(leftPart),
-							String.format("$ %.2f", price))
-					+ ConstUtils.LINE_SEPARATOR);
+		if(!saladsMap.isEmpty()) {
+			sBuffer.append("Salads: " + ConstUtils.LINE_SEPARATOR);
+			for (Map.Entry<Salads, Integer> entry : saladsMap.entrySet()) {
+				Salads salad = entry.getKey();
+				double price = salad.getPrice() * entry.getValue();
+				feeOfSalads += price;
+				String leftPart = entry.getValue() + " " + salad.getName();
+				sBuffer.append(leftPart
+						+ String.format(FuncUtils.getFormatString(leftPart),
+								String.format("$ %.2f", price))
+						+ ConstUtils.LINE_SEPARATOR);
+			}
+	
+			sBuffer.append(ConstUtils.LINE_SEPARATOR);
 		}
-
-		sBuffer.append(ConstUtils.LINE_SEPARATOR);
-		sBuffer.append("Burgers: " + ConstUtils.LINE_SEPARATOR);
-		for (Map.Entry<Burgers, Integer> entry : burgersMap.entrySet()) {
-			Burgers burger = entry.getKey();
-			double price = burger.getPrice() * entry.getValue();
-			feeOfBurgers += price;
-			String leftPart = entry.getValue() + " " + burger.getName();
-			sBuffer.append(leftPart
-					+ String.format(FuncUtils.getFormatString(leftPart),
-							String.format("$ %.2f", price))
-					+ ConstUtils.LINE_SEPARATOR);
+		if(!burgersMap.isEmpty())
+		{
+			sBuffer.append("Burgers: " + ConstUtils.LINE_SEPARATOR);
+			for (Map.Entry<Burgers, Integer> entry : burgersMap.entrySet()) {
+				Burgers burger = entry.getKey();
+				double price = burger.getPrice() * entry.getValue();
+				feeOfBurgers += price;
+				String leftPart = entry.getValue() + " " + burger.getName();
+				sBuffer.append(leftPart
+						+ String.format(FuncUtils.getFormatString(leftPart),
+								String.format("$ %.2f", price))
+						+ ConstUtils.LINE_SEPARATOR);
+			}
 		}
 
 		double subTotal = feeOfDrinks + feeOfSnacks + feeOfDesserts
@@ -213,7 +227,9 @@ public class Order {
 		}
 		double tax = subTotal * 0.13;
 
-		double total = gratuity + tax + subTotal;
+		double tempTotal = gratuity + tax + subTotal;
+		double total = tempTotal*discount;
+		
 
 		sBuffer.append("=========================================").append(
 				ConstUtils.LINE_SEPARATOR);
@@ -227,11 +243,16 @@ public class Order {
 				"GRATUITY: " + String.format("$ %.2f", gratuity))
 				+ ConstUtils.LINE_SEPARATOR);
 		sBuffer.append("=========================================").append(
-				ConstUtils.LINE_SEPARATOR);
+				ConstUtils.LINE_SEPARATOR);		
 		sBuffer.append(String.format(FuncUtils.getFormatString(""), "TOTAL: "
-				+ String.format("$ %.2f", total))
+				+ String.format("$ %.2f", tempTotal))
 				+ ConstUtils.LINE_SEPARATOR);
-
+		sBuffer.append(String.format(FuncUtils.getFormatString(""), "DISCOUNT: "
+				+ String.format("%.2f", discount))
+				+ ConstUtils.LINE_SEPARATOR);	
+		sBuffer.append(String.format(FuncUtils.getFormatString(""), "AFTER DISCOUNT: "
+				+ String.format("$ %.2f", total))
+				+ ConstUtils.LINE_SEPARATOR);		
 		if (flag) {
 			double average = total / persons;
 			sBuffer.append(String.format(FuncUtils.getFormatString(""),
@@ -305,7 +326,7 @@ public class Order {
 	public Order(Map<Drinks, Integer> drinkMap, Map<Snacks, Integer> snackMap,
 			Map<Desserts, Integer> dessertsMap, Map<Salads, Integer> saladsMap,
 			Map<Burgers, Integer> burgersMap, Map<String, Integer> needsMap,
-			int persons, String tableNums) {
+			int persons, double discount, String tableNums) {
 		super();
 		this.orderID = ORDER_ID++;
 		this.drinkMap = drinkMap;
@@ -316,9 +337,18 @@ public class Order {
 		this.needsMap = needsMap;
 		this.persons = persons;
 		this.tableNums = tableNums;
+		this.discount=discount;
 		state = OrderStateEnum.WAITING;
 	}
+	
+	public double getDiscount() {
+		return discount;
+	}
 
+	public void setDiscount(double discount) {
+		this.discount = discount;
+	}
+	
 	public int getPersons() {
 		return persons;
 	}

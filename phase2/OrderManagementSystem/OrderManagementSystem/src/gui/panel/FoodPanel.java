@@ -72,6 +72,7 @@ public class FoodPanel extends JPanel{
 	private JTextField textField_TableNumber;
 	private JTextField textField_Persons;
 	private JSeparator separator_1;
+	private JTextField textField_Discount;	
 
 	public FoodPanel() {
 		init();
@@ -89,6 +90,7 @@ public class FoodPanel extends JPanel{
 
 		textField_Persons.setText(order.getPersons() + "");
 		textField_TableNumber.setText(order.getTableNums());
+		textField_Discount.setText(order.getDiscount()+"");
 
 		Map<Drinks, Integer> drinkMap = order.getDrinkMap();
 		Map<Snacks, Integer> snackMap = order.getSnackMap();
@@ -226,6 +228,20 @@ public class FoodPanel extends JPanel{
 					JOptionPane.INFORMATION_MESSAGE);
 			return null;
 		}
+		double discount=1;
+		try {
+			discount = Double.parseDouble(textField_Discount.getText().trim());
+			if(discount<0 || discount>1) {
+				JOptionPane.showMessageDialog(null,
+						"Please enter right form of discount", "Tips",
+						JOptionPane.INFORMATION_MESSAGE);
+				return null;				
+			}
+		}
+		catch(NumberFormatException e) {
+			discount = 1;
+		}
+
 		String tableNums = textField_TableNumber.getText().trim();
 		if (tableNums.equals("")) {
 			JOptionPane.showMessageDialog(null, "Please enter # of table!",
@@ -266,7 +282,7 @@ public class FoodPanel extends JPanel{
 
 		if (MainSystem.getInstance().isEnough(needsMap)) {
 			Order order = new Order(drinkMap, snackMap, dessertsMap, saladsMap,
-					burgersMap, needsMap, persons, tableNums);
+					burgersMap, needsMap, persons, discount, tableNums);
 			return order;
 		} else {
 			JOptionPane.showMessageDialog(null, "Not enough ingredients!",
@@ -348,6 +364,7 @@ public class FoodPanel extends JPanel{
 		textField_GrilledChickenBurger.setText(value + "");
 		textField_AddionalChicken.setText(value + "");
 		textField_Persons.setText(value + "");
+		textField_Discount.setText(1+"");
 		textField_TableNumber.setText("");
 	}
 
@@ -380,6 +397,7 @@ public class FoodPanel extends JPanel{
 
 		textField_TableNumber.setEditable(flag);
 		textField_Persons.setEditable(flag);
+		textField_Discount.setEditable(flag);
 	}
 
 	private void setServedCheckboxVisible(boolean flag) {
@@ -620,7 +638,7 @@ public class FoodPanel extends JPanel{
 		textField_DoubleCheeseBurger.setBounds(239, 263, 66, 21);
 		add(textField_DoubleCheeseBurger);
 
-		JLabel lblAddionalbeef = new JLabel("AddionalBeef");
+		JLabel lblAddionalbeef = new JLabel("AdditionalBeef");
 		lblAddionalbeef.setBounds(317, 266, 86, 15);
 		add(lblAddionalbeef);
 
@@ -642,7 +660,7 @@ public class FoodPanel extends JPanel{
 		textField_GrilledChickenBurger.setBounds(239, 291, 66, 21);
 		add(textField_GrilledChickenBurger);
 
-		JLabel lblAddionalchicken = new JLabel("AddionalChicken");
+		JLabel lblAddionalchicken = new JLabel("AdditionalChicken");
 		lblAddionalchicken.setBounds(317, 294, 115, 15);
 		add(lblAddionalchicken);
 
@@ -677,6 +695,15 @@ public class FoodPanel extends JPanel{
 		textField_Persons.setColumns(10);
 		textField_Persons.setBounds(239, 364, 66, 21);
 		add(textField_Persons);
+		
+		JLabel lblDiscount = new JLabel("Discount");
+		lblDiscount.setBounds(317, 367, 70, 15);
+		add(lblDiscount);
+		
+		textField_Discount = new JTextField();
+		textField_Discount.setColumns(10);
+		textField_Discount.setBounds(442, 364, 66, 21);
+		add(textField_Discount);		
 
 		separator_1 = new JSeparator();
 		separator_1.setBackground(Color.BLACK);

@@ -51,7 +51,7 @@ public class OrderSystem {
 		Chef targetChef = chefMap.get(id);
 		targetChef.addNewOrder(order);
 	}
-	
+
 	public List<Order> getCurrentFinishedOrderList(Server server) {
 		if (server != null) {
 			return server.getFinishedList();
@@ -63,4 +63,30 @@ public class OrderSystem {
 			return list;
 		}
 	}
+
+	public List<Order> getCurrentWaitingOrderList(Chef chef) {
+		if (chef != null) {
+			return chef.getWaitingList();
+		} else {
+			List<Order> list = new ArrayList<>();
+			for (Map.Entry<Integer, Order> entry : waitingOrderMap.entrySet()) {
+				list.add(entry.getValue());
+			}
+			return list;
+		}
+	}
+
+	public List<Order> getCurrentPreparedOrderList(Server server){
+		if (server != null){
+			return server.getPreparedList();
+		} else{
+			List<Order> list = new ArrayList<>();
+			for (Map.Entry<Integer, Order> entry : preparedOrderMap.entrySet()){
+				list.add(entry.getValue());
+			}
+			return list;
+		}
+	}
+
+
 }
